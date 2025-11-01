@@ -57,14 +57,14 @@ const Projects = ({ isDarkMode }) => {
                             initial={{ y: 30, opacity: 0 }}
                             whileInView={{ y: 0, opacity: 1 }}
                             transition={{ duration: 0.6, delay: 1 }}
-                            href="" className='w-max flex bg-red-600 items-center gap-2 justify-center text-white y-3 px-10 py-3 hover:bg-red-700 hover:text-white transition'>
+                            href="https://github.com/sulyman560/GreenCart" className='w-max flex bg-red-600 items-center gap-2 justify-center text-white y-3 px-10 py-3 hover:bg-red-700 hover:text-white transition'>
                             View Github
                         </motion.a>
                         <motion.a
                             initial={{ y: 30, opacity: 0 }}
                             whileInView={{ y: 0, opacity: 1 }}
                             transition={{ duration: 0.6, delay: 1.2 }}
-                            href="" className='w-max flex items-center gap-2 justify-center text-gray-700 border-[0.5px] 
+                            href="https://greencart-ashy.vercel.app" className='w-max flex items-center gap-2 justify-center text-gray-700 border-[0.5px] 
                         border-gray-700 rounded-full y-3 px-10 py-3 transition dark:text-white dark:border-white'>
                             View Project <Image src={isDarkMode ? assets.arrow_icon_dark : assets.arrow_icon} alt='right-arrow' className='w-4' />
                         </motion.a>
