@@ -10,14 +10,25 @@ const Projects = ({ isDarkMode }) => {
             whileInView={{ opacity: 1 }}
             transition={{ duration: 1 }}
             id='project' className='w-full px-[12%] py-10 scroll-mt-20'>
-            <motion.div
-                initial={{ y: -20, opacity: 0 }}
-                whileInView={{ y: 0, opacity: 1 }}
-                transition={{ delay: 0.3, duration: 0.5 }}
-                className='flex flex-col items-center gap-5'>
-                <h2 className='text-center text-5xl font-Ovo'>Projects</h2>
-                <div className='w-0.5 h-16 bg-black mt-2 dark:bg-white'></div>
-            </motion.div>
+            <motion.h4
+                    initial={{ y: -20, opacity: 0 }}
+                    whileInView={{ y: 0, opacity: 1 }}
+                    transition={{ delay: 0.3, duration: 0.5 }}
+                    className='text-center mb-2 text-lg font-Ovo'>My Portfolio
+                  </motion.h4>
+                  <motion.h2
+                    initial={{ y: -20, opacity: 0 }}
+                    whileInView={{ y: 0, opacity: 1 }}
+                    transition={{ delay: 0.5, duration: 0.5 }}
+                    className='text-center text-5xl font-Ovo'>My latest work
+                  </motion.h2>
+                  <motion.p
+                    initial={{ opacity: 0 }}
+                    whileInView={{ opacity: 1 }}
+                    transition={{ delay: 0.7, duration: 0.5 }}
+                    className='mb-12 text-center mx-auto mt-5 max-w-2xl font-Ovo'>
+                    welcome to my portfolio section. Here are some of my recent projects that showcase my skills and expertise in web development and design.
+                  </motion.p>
             {/* Project 1 */}
             <motion.div
                 initial={{ opacity: 0 }}
@@ -241,7 +252,7 @@ const Projects = ({ isDarkMode }) => {
                     className='w-full sm:w-[40%] md:w-[60%] rounded-3xl max-w-none'>
                     <Image src={assets.food_del} alt="user" className='w-full rounded-3xl border border-gray-200' />
                 </motion.div>
-                <div className='flex-1'>
+                <div className='flex-1 mb-5'>
                     <motion.h3
                         initial={{ opacity: 0 }}
                         whileInView={{ opacity: 1 }}
@@ -287,12 +298,18 @@ const Projects = ({ isDarkMode }) => {
                             View Project <Image src={isDarkMode ? assets.arrow_icon_dark : assets.arrow_icon} alt='right-arrow' className='w-4' />
                         </motion.a>
                     </div>
+                    
 
 
                 </div>
 
             </motion.div>
-
+            <motion.button 
+                    whileHover={{scale:1.05}}
+                    transition={{duration:0.3}}
+                    type='submit' className='py-3 px-8 w-max flex items-center justify-between gap-2 bg-black/80 text-white 
+                    rounded-full mx-auto hover:bg-black duration-500 dark:bg-transparent dark:border-[0.5px] dark:hover:bg-darkHover/50'
+                    >See more <Image src={assets.right_arrow_white} className='w-4' alt='' /></motion.button>
         </motion.div>
     )
 }
