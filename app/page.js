@@ -5,6 +5,7 @@ import Footer from "@/components/Footer";
 import Header from "@/components/Header";
 import Navbar from "@/components/Navbar";
 import Projects from "@/components/Projects";
+import ScrollToTopButton from "@/components/ScrollToTopButton";
 import Services from "@/components/Services";
 import Work from "@/components/Work";
 import Image from "next/image";
@@ -45,6 +46,7 @@ export default function Home() {
     {/* <Work isDarkMode={isDarkMode} /> */}
     <Projects isDarkMode={isDarkMode} />
     <Contact isDarkMode={isDarkMode} />
+    <ScrollToTopButton />
     <Footer isDarkMode={isDarkMode} />
     </>
   );
